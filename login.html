@@ -1,0 +1,73 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blinkit Login</title>
+    <link rel="stylesheet" href="css/login.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="login-container">
+
+        <!-- <div class="product-images">
+            <div class="product">🥑</div>
+            <div class="product">🍅</div>
+            <div class="product">🥛</div>
+            <div class="product">🍞</div>
+            <div class="product">🍌</div>
+        </div> -->
+
+        <div class="login-box">
+
+            <div class="logo">
+              <img src="images\blinkit_app_logo.svg" alt="app-logo">
+            </div>
+
+            <h1>India's last minute app</h1>
+            <p class="subtitle">Log in or sign up</p>
+
+            <form>
+                <div class="phone-input">
+                    <span>+91</span>
+                    <input
+                        type="tel"
+                        id="mobile"
+                        maxlength="10"
+                        placeholder="Enter mobile number"
+                    >
+                </div>
+
+                <button type="button" id="continueBtn" disabled>
+                    Continue
+                </button>
+            </form>
+            <p class="terms">
+                By continuing, you agree to our
+                <a href="#">Terms of Service</a> &
+                <a href="#">Privacy Policy</a>
+            </p>
+
+        </div>
+    </div>
+
+    <script>
+        const mobile = document.getElementById("mobile");
+        const continueBtn = document.getElementById("continueBtn");
+
+        mobile.addEventListener("input", function () {
+            this.value = this.value.replace(/\D/g, "").slice(0, 10);
+            continueBtn.disabled = this.value.length !== 10;
+        });
+
+        continueBtn.addEventListener("click", function () {
+            if (mobile.value.length === 10) {
+                alert("Demo login: OTP verification is not connected.");
+            }
+        });
+    </script>
+
+</body>
+</html>
