@@ -1,0 +1,237 @@
+
+/* ============== TABLET RESPONSIVE ============== */
+
+@media only screen and (min-width:576px) and (max-width:999px){
+
+    /* Header */
+    header{
+        flex-wrap: wrap;
+        gap: 10px;
+        padding: 10px;
+    }
+
+    .headerLeft{
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .logo{
+        padding: 12px 15px;
+    }
+
+    .headerAddress{
+        padding: 10px 15px;
+    }
+
+    .headerAddress h3{
+        font-size: 16px;
+    }
+
+    .headerAddress p{
+        font-size: 12px;
+    }
+
+    .searchBox{
+        flex: 1;
+        min-width: 200px;
+    }
+
+    .searchBox button{
+        padding: 12px;
+    }
+
+    .headerBtn{
+        gap: 10px;
+        margin-right: 0;
+    }
+
+    .headerBtn button{
+        font-size: 14px;
+        padding: 12px;
+    }
+
+    /* Banner */
+    .bannerSection{
+        width: 95%;
+        margin: 150px auto 0;
+    }
+
+    .orderBanner{
+        width: 92%;
+        gap: 10px;
+    }
+
+    .orderBannerItem{
+        flex-basis: 32%;
+        margin: 0;
+    }
+
+    /* Category */
+    .categorySection{
+        width: 95%;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .catogoryItems{
+        flex-basis: 10%;
+    }
+    .categorySection .catogoryItems:nth-last-child(-n+2){
+    display: none;
+   }
+    
+
+    /* Products */
+    .productSection{
+        width: 95%;
+        padding: 30px 0;
+    }
+
+    .productRow{
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 10px;
+    overflow-x: auto;
+    }
+
+    .productItems{
+    flex: 0 0 23.5%;
+    }
+
+    .productImg{
+        padding: 10px;
+    }
+
+    .productContent{
+        padding: 10px;
+    }
+
+    .productContent h3{
+        font-size: 13px;
+    }
+
+    .productContent p{
+        font-size: 12px;
+    }
+
+    .btn-price-outer button{
+        padding: 6px 10px;
+    }
+
+    /* Footer */
+    footer{
+        padding-top: 20px;
+    }
+
+    .footer-mid{
+        width: 95%;
+    }
+
+    .footer-mid-row1{
+        gap: 20px;
+    }
+
+    .footer-mid-row1-left{
+        flex-basis: 35%;
+    }
+
+    .footer-mid-row1-right{
+        flex-basis: 65%;
+    }
+
+    .List-Right li{
+        flex-basis: 45%;
+    }
+
+    .footer-mid-row2{
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .footer-mid-row2 p{
+        flex-basis: 100%;
+    }
+
+    .appIcons{
+        flex-basis: auto;
+    }
+
+    .social-links{
+        margin-left: 0;
+    }
+    
+
+}
+
+
+@media only screen and (min-width:200px) and (max-width:575px){
+    header{
+    flex-direction: column;
+    align-items: stretch;
+    padding: 15px;
+    gap: 15px;
+}
+.headerLeft{
+    justify-content: center;
+}
+.logo{
+    padding: 10px;
+}
+.headerAddress{
+    padding: 10px;
+}
+.headerAddress h3{
+    font-size: 15px;
+}
+.headerAddress p{
+    font-size: 12px;
+}
+.searchBox button{
+    padding: 10px;
+}
+.headerBtn{
+    position: fixed;
+    width: 100%;
+    background-color: white;
+    margin-right: 0px;
+    justify-content: center;
+    bottom: 0px;
+   
+}
+.bannerSection{
+    display: none;
+}
+.orderBanner{
+    padding: 10px;
+    flex-direction: column;
+}
+.catogoryItems{
+    flex-basis: 25%;
+}
+.productSection{
+    padding: 30px 10px;
+}
+.productItems{
+    flex-basis: 49%;
+}
+footer{
+    padding-top: 0px;
+}
+.footer-mid-row1{
+    padding: 10px;
+    gap: 25px;
+    flex-direction: column;
+}
+.List-Right li{
+  flex-basis: 48%;
+}
+.footer-mid-row2{
+    gap: 20px;
+    flex-direction: column;
+}
+.footer-mid-row3{
+    padding: 0px 10px;
+}
+
+}
